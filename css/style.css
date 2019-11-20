@@ -74,3 +74,15 @@ button {
   background: #fff;
   color: #100e17;
 }
+
+#postovi {
+  margin: 20px 60px;
+}
+
+#postovi h1 {
+  color: #fff;
+}
+
+.tacka {
+  width: 20px;
+}
