@@ -1,0 +1,46 @@
+.registration {
+  width: 400px;
+  height: 600px;
+  color: #fff;
+  top: 58%;
+  right: -5%;
+  position: absolute;
+  transform: translate(-50%, -50%);
+  box-sizing: border-box;
+  padding: 50px 30px;
+}
+
+h1 {
+  margin: 0;
+  padding: 0 0 20px;
+  text-align: left;
+  font-size: 22px;
+}
+
+.registration input {
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+.registration input[type="text"],
+input[type="password"] {
+  border: 1px solid #fff;
+  background: transparent;
+  outline: none;
+  height: 40px;
+  color: #fff;
+  font-size: 16px;
+  padding: 5px;
+}
+
+.autn {
+  height: 600px;
+  width: 600px;
+  margin-left: 100px;
+  margin-top: 40px;
+}
+
+.puno-dugme {
+  padding: 10px;
+  font-size: 20px;
+}

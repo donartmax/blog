@@ -1,0 +1,31 @@
+.red {
+  display: flex;
+  width: 100%;
+  padding: 20px;
+}
+
+.kolona {
+  flex: 50%;
+}
+
+.o-nama img {
+  width: 500px;
+  padding-left: 50px;
+}
+
+.o-nama .tekst {
+  /* padding: 20px 50px 20px 20px; */
+  text-align: justify;
+  width: 50%;
+  padding-left: 50px;
+}
+
+.o-nama .tekst h1 {
+  color: #00edff;
+  font-size: 50px;
+}
+
+.o-nama .tekst p {
+  color: #7d7d7d;
+  font-size: 18px;
+}

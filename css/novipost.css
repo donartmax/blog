@@ -1,0 +1,69 @@
+.novi_post {
+  width: 100%;
+  height: 600px;
+  color: #7d7d7d;
+  padding-top: 30px;
+  padding-left: 50px;
+  padding-right: 50px;
+  box-sizing: border-box;
+}
+
+textarea,
+input {
+  background: #100e17;
+  height: 60px;
+  background-color: #100e17;
+  color: #7d7d7d;
+}
+
+.novi_post input {
+  padding: 10px;
+  width: 500px;
+  margin-bottom: 20px;
+  font-size: 16px;
+}
+
+.novi_post textarea {
+  padding: 10px;
+  height: 400px;
+  width: 100%;
+  margin-bottom: 20px;
+  font-size: 16px;
+}
+
+.desno {
+  margin-right: 150px;
+  margin-top: 50px;
+}
+
+.korisnik {
+  width: 100%;
+}
+
+.korisnik img {
+  margin-top: -30px;
+  margin-right: 10px;
+  float: right;
+  width: 100px;
+}
+
+.korisnik .prijava {
+  margin: 0;
+  float: right;
+  color: #7d7d7d;
+  font-size: 15px;
+}
+
+.korisnik .ime {
+  margin: 0;
+  margin-top: 10px;
+  float: right;
+  color: whitesmoke;
+  font-size: 18px;
+  font-weight: 700;
+}
+
+button {
+  width: 150px;
+  margin-right: 15px;
+}

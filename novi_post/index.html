@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="icon" href="img/epos_logo.png" type="logo">
+    <link rel="stylesheet" href="../css/novipost.css">
+    <link rel="stylesheet" href="../css/style.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
+    <title>BLOGcommunity | Novi post</title>
+</head>
+
+<body>
+
+    <nav>
+        <ul>
+            <a href="/blog"><img id="logo" src="../img/epos_logo.png" alt="LOGO"></a>
+            <li><a href="/blog/logovanje">Uloguj se</a></li>
+            <li><a href="/blog/registracija">Registracija</a></li>
+            <li><a href="/blog/o_nama/">O nama</a></li>
+            <li><a href="/blog">Početna</a></li>
+        </ul>
+    </nav>
+
+    <hr>
+
+    <div class="korisnik">
+        <div class="desno">
+            <p class="prijava">Prijavljen kao</p> <br>
+            <p class="ime"> Petar Petrovic</p>
+        </div>
+        <div class="levo">
+            <img src="../img/epos_logo.png" alt="logo">
+        </div>
+    </div>
+
+    <div class="novi_post">
+        <p>Datum: <span id="datetime"></span></p>
+        <script>
+            var dt = new Date();
+            document.getElementById("datetime").innerHTML = dt.toLocaleDateString();
+        </script>
+        <form>
+            <input type="text" name="naslov" placeholder="Naslov članka">
+            <textarea name="tekst" cols="30" rows="10" placeholder="Unesite tekst članka..."></textarea>
+            <button class="puno-dugme" type="submit">Posalji</button>
+            <button class="prazno-dugme" type="reset">Odustani</button>
+        </form>
+    </div>
+
+</body>
+
+</html>
