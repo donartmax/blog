@@ -1,0 +1,88 @@
+.postovi a{
+    color: #fa71cd;
+}
+
+.postovi{
+    margin-left: 30%;
+    margin-right: 30%;
+}
+
+.autor{
+    display: flex;
+}
+
+.autor .slika{
+    margin-top: 10px;
+}
+
+.profil{
+    margin-left: 10%;
+    display: flex;
+}
+
+.profil-levo{
+    max-width: 250px;
+    text-align: center;
+}
+
+.profil-levo a{
+    color: #fa71cd;
+}
+
+.profil .levo img {
+    width: 250px;
+}
+
+.profil-desno{
+    padding-left: 20px;
+}
+
+.profil-desno .ime{
+    color: #fff;
+    font-size: 30px;
+    margin-bottom: 0;
+}
+
+.username{
+    color: #7d7d7d;
+    font-size: 18px;
+}
+
+.biografija{
+    color: #7d7d7d;
+    text-align: justify;
+}
+
+.desno {
+    margin-right: 150px;
+    margin-top: 50px;
+
+  }
+  
+  .korisnik {
+    width: 100%;
+  }
+  
+  .korisnik img {
+    margin-top: -30px;
+    margin-right: 10px;
+    float: right;
+    width: 100px;
+  }
+  
+  .korisnik .prijava {
+    margin: 0;
+    float: right;
+    color: #7d7d7d;
+    font-size: 15px;
+  }
+  
+  .korisnik .ime {
+    margin: 0;
+    margin-top: 10px;
+    float: right;
+    color: whitesmoke;
+    font-size: 18px;
+    font-weight: 700;
+  }
+  

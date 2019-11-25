@@ -1,0 +1,26 @@
+.slika img{
+    width: 200px;
+}
+
+a{
+    color: #fa71cd;
+}
+
+.autor .naslov{
+    color: #fff;
+    font-size: 30px;
+}
+
+.autor{
+    margin: 50px;
+    display: flex;
+}
+  
+.post{
+    margin-left: 20%;
+    background-color: #1c1a24;
+    border-radius: 50px;
+    padding: 20px 40px;
+    color: #7d7d7d;
+    text-align: justify;
+}

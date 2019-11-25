@@ -81,10 +81,7 @@ button {
 
 #postovi h1 {
   color: #fff;
-}
-
-.tacka {
-  width: 20px;
+  display: relative;
 }
 
 /* footer */
@@ -144,4 +141,49 @@ a {
 .kontakt ul li {
   padding: 0 40px;
   display: inline-block;
+}
+
+.postovi{
+  margin: 20px 20%;
+}
+
+.naslov{
+  color: #fff;
+  font-size: 30px;
+}
+
+.sivi{
+  color: #7d7d7d;
+  font-size: 15px;
+}
+
+#postovi a{
+  color: #fa71cd;
+}
+
+.datum {
+  margin: 0;
+  padding: 0;
+}
+
+.post{
+  margin: 0;
+  background: none;
+  margin-bottom: 60px;
+}
+
+.post p{
+  color: #7d7d7d;
+  text-align: justify;
+}
+
+.postovi h2{
+  margin-top: 0;
+}
+
+.autor .slika img{
+  height: 60px;
+  margin: 0;
+  padding: 0;
+  margin-right: 5px;
 }
