@@ -2,12 +2,10 @@
   width: 320px;
   height: 420px;
   color: #fff;
-  top: 50%;
-  left: 20%;
   position: absolute;
-  transform: translate(-50%, -50%);
   box-sizing: border-box;
-  padding: 70px 30px;
+  margin-top: 8%;
+  margin-left: 15%;
 }
 
 .loginbox p {
@@ -21,21 +19,30 @@
   margin-bottom: 20px;
 }
 
-.log {
-  width: 700px;
-  height: 600px;
-}
-
-.image {
-  width: 700px;
-  height: 600px;
-  background-image: log;
-  position: absolute;
-  bottom: 0%;
-  right: 10%;
+.image img {
+  width: 50%;
+  float: right;
+  bottom: 0;
+  right: 5%;
+  position: fixed;
 }
 
 .puno-dugme {
   padding: 10px;
   font-size: 20px;
+}
+
+@media only screen and (max-width: 1280px) {
+  .loginbox {
+    width: 80%;
+    position: relative;
+    margin: auto;
+    padding: auto;
+    justify-content: center;
+  }
+
+  .image img {
+    width: 80%;
+    margin: auto;
+  }
 }

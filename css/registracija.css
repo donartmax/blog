@@ -1,11 +1,11 @@
-.red{
+.red {
   display: flex;
 }
 
 .registration {
-  width: 400px;
+  width: 30%;
   margin-top: 50px;
-  margin-left: 50px;
+  margin-left: 10%;
   color: #fff;
   box-sizing: border-box;
 }
@@ -34,12 +34,34 @@ input[type="password"] {
 }
 
 .autn {
-  height: 400px;
-  margin-left: 100px;
+  width: 80%;
+  margin-left: 5%;
   margin-top: 40px;
 }
 
 .puno-dugme {
   padding: 10px;
   font-size: 20px;
+}
+
+@media only screen and (max-width: 1280px) {
+  .red {
+    display: block;
+  }
+
+  .registration {
+    padding-top: 50px;
+    margin: auto;
+    width: 80%;
+  }
+
+  .image {
+    margin: auto;
+    padding: auto;
+    margin-left: 10%;
+  }
+
+  .autn {
+    width: 80%;
+  }
 }
