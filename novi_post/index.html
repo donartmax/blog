@@ -42,9 +42,9 @@
             var dt = new Date();
             document.getElementById("datetime").innerHTML = dt.toLocaleDateString();
         </script>
-        <form>
-            <input type="text" name="naslov" placeholder="Naslov članka">
-            <textarea name="tekst" cols="30" rows="10" placeholder="Unesite tekst članka..."></textarea>
+        <form id="forma_novi">
+            <input type="text" id="naslov" name="naslov" placeholder="Naslov članka">
+            <textarea name="tekst" id="tekst" cols="30" rows="10" placeholder="Unesite tekst članka..."></textarea>
             <div class="dugmici">
                 <button class="puno-dugme" type="submit">Posalji</button>
                 <button class="prazno-dugme" type="reset">Odustani</button>
