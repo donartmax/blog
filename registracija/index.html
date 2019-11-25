@@ -10,6 +10,7 @@
     <link rel="stylesheet" href="../css/registracija.css">
     <link rel="stylesheet" href="../css/style.css">
     <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
+    <script src="reglog.js"></script>
 </head>
 
 <body>
@@ -28,11 +29,11 @@
     <div class="red">
         <div class="registration">
             <h1>REGISTRACIJA</h1>
-            <form>
-                <input type="text" name="" placeholder="Ime i prezime">
-                <input type="text" name="" placeholder="Korisničko ime">
-                <input type="text" name="" placeholder="E-mail">
-                <input type="password" name="" placeholder="Lozinka">
+            <form onsubmit="return validatereg()" action="../index.html">
+                <input type="text" id="name" placeholder="Ime i prezime">
+                <input type="text" id="username" placeholder="Korisničko ime">
+                <input type="text" id="email" placeholder="E-mail">
+                <input type="password" id="password" placeholder="Lozinka">
                 <input class="puno-dugme" type="submit" name="" value="Registrujte se">
             </form>
         </div>
