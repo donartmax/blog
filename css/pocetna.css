@@ -67,6 +67,10 @@
   height: 300px;
 }
 
+.grid-ul .meni-telefon {
+  /* display: none; */
+}
+
 @media only screen and (max-width: 768px) {
   .grid-logo {
     grid-column-start: 1;
@@ -95,7 +99,14 @@
     margin: auto;
   }
 
-  .grid-ul,
+  .grid-ul .meni-telefon {
+    display: inline;
+  }
+
+  .grid-ul .meni {
+    display: none;
+  }
+
   .grid-slika {
     display: none;
   }

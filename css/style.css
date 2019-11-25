@@ -71,31 +71,6 @@ hr {
   float: left;
   padding: 10px;
 }
-
-ul {
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-}
-
-li {
-  list-style: none;
-}
-
-li a {
-  text-decoration: none;
-  color: #fff;
-  display: block;
-  float: right;
-  padding: 30px 30px 20px 30px;
-  z-index: 55;
-}
-
-li a:hover,
-li a:active {
-  color: #00edff;
-}
-
 /* dugmici */
 
 button {
@@ -228,4 +203,183 @@ a {
   margin: 0;
   padding: 0;
   margin-right: 5px;
+}
+
+/* meni */
+
+.container {
+  display: inline-block;
+  cursor: pointer;
+}
+
+.bar1,
+.bar2,
+.bar3 {
+  width: 35px;
+  height: 5px;
+  background-color: #333;
+  margin: 6px 0;
+  transition: 0.4s;
+}
+
+.change .bar1 {
+  -webkit-transform: rotate(-45deg) translate(-9px, 6px);
+  transform: rotate(-45deg) translate(-9px, 6px);
+}
+
+.change .bar2 {
+  opacity: 0;
+}
+
+.change .bar3 {
+  -webkit-transform: rotate(45deg) translate(-8px, -8px);
+  transform: rotate(45deg) translate(-8px, -8px);
+}
+
+/* .meni-telefon {
+  display: none;
+}
+
+.meni-telefon .nav .skip {
+  position: absolute;
+  right: 1em;
+  top: 1em;
+  overflow: hidden;
+  width: 2.5em;
+  height: 2.5em;
+  text-align: center;
+  line-height: 2.5em;
+}
+
+.meni-telefon .nav ul.open {
+  max-height: 20em;
+}
+
+.meni-telefon .nav ul {
+  max-height: 0;
+  overflow: hidden;
+  position: absolute;
+  right: 1em;
+  top: 3.5em;
+  transition: max-height 0.25s ease-out;
+}
+
+.meni-telefon nav li {
+  text-align: right;
+}
+
+
+.meni-telefon nav li a {
+  padding: 0.5em;
+  display: block;
+}
+
+@media screen and (max-width: 37em) {
+  .meni-telefon {
+    display: inline-block;
+  }
+
+  .meni-telefon .nav ul {
+    overflow: auto;
+    max-height: inherit;
+    position: static;
+    display: flex;
+    justify-content: flex-start;
+    background-color: transparent;
+  }
+
+  .meni-telefon .nav li {
+    text-align: left;
+    display: inline-block;
+    border-top: 0;
+    border-right: 1px solid #aaa;
+  }
+
+  .meni-telefon .nav li:last-child {
+    border: 0;
+  }
+
+  .meni-telefon .nav .skip {
+    display: none;
+    visibility: hidden;
+  }
+} */
+
+.nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+li {
+  list-style: none;
+}
+
+li a {
+  text-decoration: none;
+  color: #fff;
+  display: block;
+  float: right;
+  padding: 30px 30px 20px 30px;
+  z-index: 55;
+}
+
+li a:hover,
+li a:active {
+  color: #00edff;
+}
+
+.js .nav ul.open {
+  max-height: 20em;
+}
+
+.js .nav ul {
+  max-height: 0;
+  overflow: hidden;
+  position: absolute;
+  right: 1em;
+  top: 3.5em;
+  transition: max-height 0.25s ease-out;
+}
+
+.js .nav .skip {
+  position: absolute;
+  right: 1em;
+  top: 1em;
+  overflow: hidden;
+  width: 2.5em;
+  height: 2.5em;
+  text-align: center;
+  line-height: 2.5em;
+}
+
+.js .nav ul {
+  overflow: auto;
+  max-height: inherit;
+  position: static;
+  display: flex;
+  justify-content: flex-start;
+  background-color: transparent;
+}
+
+@media screen and (min-width: 1210px) {
+  .js .nav li {
+    text-align: left;
+    display: inline-block;
+    border-top: 0;
+  }
+  .js .nav li:last-child {
+    border: 0;
+  }
+  .js .nav .skip {
+    display: none;
+    visibility: hidden;
+  }
+}
+
+@media screen and (max-width: 1210px) {
+  .js .nav .skip {
+    display: block;
+    visibility: initial;
+  }
 }
