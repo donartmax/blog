@@ -12,16 +12,64 @@ body {
   padding: 0;
 }
 
+.grid-slika img {
+  max-width: 550px;
+}
+
+hr {
+  width: 100%;
+  margin: 0;
+  display: flex;
+}
+.grid-container {
+  margin: 20px;
+  display: grid;
+  grid-template-columns: auto auto auto;
+  grid-gap: 20px 50px;
+}
+
+.grid-logo {
+  grid-column: 1;
+}
+
+.grid-ul {
+  grid-column-start: 2;
+  grid-column-end: 4;
+}
+
+.grid-slika {
+  grid-row-start: 2;
+  grid-row-end: 4;
+  grid-column: 3;
+}
+
+.grid-naslovi {
+  grid-column: 1;
+  grid-row: 2;
+  margin-bottom: 0;
+  text-align: justify;
+}
+
+.grid-naslovi .naslovi {
+  margin-left: 15px;
+}
+
+.grid-naslovi .tekst {
+  color: #7d7d7d;
+  margin-left: 22px;
+}
+
+.grid-dugmici {
+  grid-column-start: 1;
+  grid-column-end: 3;
+  grid-row: 3;
+  margin-left: 20px;
+}
+
 #logo {
   width: 60px;
   float: left;
   padding: 10px;
-}
-
-#hero {
-  width: 600px;
-  float: right;
-  margin-right: 30px;
 }
 
 ul {
@@ -46,12 +94,6 @@ li a {
 li a:hover,
 li a:active {
   color: #00edff;
-}
-
-hr {
-  width: 100%;
-  margin: 0;
-  display: flex;
 }
 
 /* dugmici */
@@ -143,21 +185,21 @@ a {
   display: inline-block;
 }
 
-.postovi{
+.postovi {
   margin: 20px 20%;
 }
 
-.naslov{
+.naslov {
   color: #fff;
   font-size: 30px;
 }
 
-.sivi{
+.sivi {
   color: #7d7d7d;
   font-size: 15px;
 }
 
-#postovi a{
+#postovi a {
   color: #fa71cd;
 }
 
@@ -166,22 +208,22 @@ a {
   padding: 0;
 }
 
-.post{
+.post {
   margin: 0;
   background: none;
   margin-bottom: 60px;
 }
 
-.post p{
+.post p {
   color: #7d7d7d;
   text-align: justify;
 }
 
-.postovi h2{
+.postovi h2 {
   margin-top: 0;
 }
 
-.autor .slika img{
+.autor .slika img {
   height: 60px;
   margin: 0;
   padding: 0;
