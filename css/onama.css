@@ -11,7 +11,11 @@
   width: 80%;
   padding-left: 50px;
 }
-
+.o-nama img:hover{
+  -webkit-transform: scale(0.8);
+  -ms-transform: scale(0.8);
+  transform: scale(0.8);
+}
 .o-nama .tekst {
   text-align: justify;
   width: 50%;
@@ -21,6 +25,19 @@
 .o-nama .tekst h1 {
   color: #00edff;
   font-size: 50px;
+}
+.o-nama .tekst h1:hover {
+  
+  position: relative;
+  letter-spacing: 4px;
+  overflow: hidden;
+  background: linear-gradient(110deg, #000, #fff, #7d7d7d);
+  background-repeat: no-repeat;
+  background-size: 70%;
+  animation: animate 2.5s  linear ;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: rgba(255, 255, 255, 0);
+  animation-fill-mode: none;
 }
 
 .o-nama .tekst p {
