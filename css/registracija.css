@@ -44,6 +44,28 @@ input[type="password"] {
   font-size: 20px;
 }
 
+@keyframes anim-slika{
+  0%{
+    border-radius: 0;
+    opacity: 0.2;
+    filter: blur(20px);
+    filter: grayscale(100%);
+  }
+  
+  100%{
+    border-radius: 25%;
+    opacity: 1;
+    filter: blur(0);
+    filter: grayscale(0%);
+  }
+}
+img{
+    -webkit-transform: scale(0.8);
+    -ms-transform: scale(0.8);
+    transform: scale(0.8);
+    animation-name: anim-slika;
+    animation-duration: 5s;
+}
 @media only screen and (max-width: 1280px) {
   .red {
     display: block;
