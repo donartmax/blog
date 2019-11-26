@@ -30,6 +30,7 @@ hr {
 
 .grid-logo {
   grid-column: 1;
+  z-index: 100;
 }
 
 .grid-ul {
@@ -205,7 +206,7 @@ a {
   margin-right: 5px;
 }
 
-/* meni */
+/* meni za telefon */
 
 .container {
   display: inline-block;
@@ -217,7 +218,7 @@ a {
 .bar3 {
   width: 35px;
   height: 5px;
-  background-color: #333;
+  background-color: rgb(126, 125, 125);
   margin: 6px 0;
   transition: 0.4s;
 }
@@ -234,81 +235,6 @@ a {
 .change .bar3 {
   -webkit-transform: rotate(45deg) translate(-8px, -8px);
   transform: rotate(45deg) translate(-8px, -8px);
-}
-
-/* .meni-telefon {
-  display: none;
-}
-
-.meni-telefon .nav .skip {
-  position: absolute;
-  right: 1em;
-  top: 1em;
-  overflow: hidden;
-  width: 2.5em;
-  height: 2.5em;
-  text-align: center;
-  line-height: 2.5em;
-}
-
-.meni-telefon .nav ul.open {
-  max-height: 20em;
-}
-
-.meni-telefon .nav ul {
-  max-height: 0;
-  overflow: hidden;
-  position: absolute;
-  right: 1em;
-  top: 3.5em;
-  transition: max-height 0.25s ease-out;
-}
-
-.meni-telefon nav li {
-  text-align: right;
-}
-
-
-.meni-telefon nav li a {
-  padding: 0.5em;
-  display: block;
-}
-
-@media screen and (max-width: 37em) {
-  .meni-telefon {
-    display: inline-block;
-  }
-
-  .meni-telefon .nav ul {
-    overflow: auto;
-    max-height: inherit;
-    position: static;
-    display: flex;
-    justify-content: flex-start;
-    background-color: transparent;
-  }
-
-  .meni-telefon .nav li {
-    text-align: left;
-    display: inline-block;
-    border-top: 0;
-    border-right: 1px solid #aaa;
-  }
-
-  .meni-telefon .nav li:last-child {
-    border: 0;
-  }
-
-  .meni-telefon .nav .skip {
-    display: none;
-    visibility: hidden;
-  }
-} */
-
-.nav ul {
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
 }
 
 li {
@@ -329,57 +255,75 @@ li a:active {
   color: #00edff;
 }
 
-.js .nav ul.open {
-  max-height: 20em;
+.elementi {
+  display: none;
+  visibility: hidden;
+  background-color: #100e17;
+  width: 100%;
+  height: 100%;
+  z-index: 80;
+  top: 0;
+  left: 0;
+  position: absolute;
 }
 
-.js .nav ul {
-  max-height: 0;
-  overflow: hidden;
-  position: absolute;
-  right: 1em;
-  top: 3.5em;
-  transition: max-height 0.25s ease-out;
+.container {
+  display: none;
+  z-index: 1000;
 }
 
-.js .nav .skip {
-  position: absolute;
-  right: 1em;
-  top: 1em;
-  overflow: hidden;
-  width: 2.5em;
-  height: 2.5em;
+.elementi ul {
+  display: inline-block;
+  padding-top: 100px;
+  padding-left: 0;
+  margin-left: 20%;
+  margin-right: 20%;
+}
+
+.elementi ul li {
+  justify-content: center;
+  font-size: 25px;
   text-align: center;
-  line-height: 2.5em;
 }
 
-.js .nav ul {
-  overflow: auto;
-  max-height: inherit;
-  position: static;
-  display: flex;
-  justify-content: flex-start;
-  background-color: transparent;
-}
+@media only screen and (max-width: 1210px) {
+  .naslovi {
+    text-align: center;
+    justify-content: center;
+    margin: 0;
+    padding: 0;
+    padding-right: 20px;
+  }
 
-@media screen and (min-width: 1210px) {
-  .js .nav li {
-    text-align: left;
-    display: inline-block;
-    border-top: 0;
+  .naslov-1,
+  .naslov-2 {
+    padding: 0;
   }
-  .js .nav li:last-child {
-    border: 0;
+
+  .container {
+    display: initial;
+    position: absolute;
+    top: 25px;
+    right: 20px;
+    float: right;
   }
-  .js .nav .skip {
+
+  .meni-telefon {
     display: none;
-    visibility: hidden;
   }
-}
 
-@media screen and (max-width: 1210px) {
-  .js .nav .skip {
-    display: block;
-    visibility: initial;
+  .footer-opis p {
+    text-align: justify;
+    width: 80%;
+    margin: auto;
+  }
+
+  .kontakt {
+    width: 100%;
+    margin: auto;
+  }
+
+  .kontakt ul {
+    padding: 0;
   }
 }

@@ -8,11 +8,10 @@
     <link rel="icon" href="img/epos_logo.png" type="logo">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/pocetna.css">
-    <link rel="stylesheet" href="css/responzivnost.css">
     <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <title>BLOGcommunity</title>
-    <script>(function (H) { H.className = H.className += "js" })(document.documentElement)</script>
+    <script src="https://unpkg.com/scrollreveal"></script>
 </head>
 
 <body>
@@ -23,21 +22,29 @@
         </div>
 
         <div class="grid-ul">
-            <div class="meni">
-                <nav class="nav">
-                    <div class="container skip" onclick="myFunction(this)">
-                        <div class="bar1"></div>
-                        <div class="bar2"></div>
-                        <div class="bar3"></div>
-                    </div>
+            <ul class="meni">
+                <li><a href="/blog/logovanje">Uloguj se</a></li>
+                <li><a href="/blog/registracija">Registracija</a></li>
+                <li><a href="/blog/o_nama/">O nama</a></li>
+                <li><a href="/blog/">Početna</a></li>
+            </ul>
 
-                    <ul id="menu">
+            <div class="meni-telefon">
+                <div class="elementi">
+                    <ul>
                         <li><a href="/blog">Početna</a></li>
                         <li><a href="/blog/o_nama/">O nama</a></li>
                         <li><a href="/blog/registracija">Registracija</a></li>
                         <li><a href="/blog/logovanje">Uloguj se</a></li>
                     </ul>
-                </nav>
+                </div>
+            </div>
+
+
+            <div class="container" onclick="myFunction(this)">
+                <div class="bar1"></div>
+                <div class="bar2"></div>
+                <div class="bar3"></div>
             </div>
 
         </div>
@@ -73,7 +80,60 @@
 
     <hr>
 
+    <h1 class="headline">
+        Widget Inc.
+    </h1>
+
     <div id="postovi">
+
+        <div class="blog-slider">
+            <div class="blog-slider__wrp swiper-wrapper">
+                <div class="blog-slider__item swiper-slide">
+                    <div class="blog-slider__img">
+
+                        <img src="https://res.cloudinary.com/muhammederdem/image/upload/v1535759872/kuldar-kalvik-799168-unsplash.jpg"
+                            alt="">
+                    </div>
+                    <div class="blog-slider__content">
+                        <span class="blog-slider__code">26 December 2019</span>
+                        <div class="blog-slider__title">Lorem Ipsum Dolor</div>
+                        <div class="blog-slider__text">Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                            Recusandae voluptate repellendus magni illo ea animi? </div>
+                        <a href="#" class="blog-slider__button">READ MORE</a>
+                    </div>
+                </div>
+                <div class="blog-slider__item swiper-slide">
+                    <div class="blog-slider__img">
+                        <img src="https://res.cloudinary.com/muhammederdem/image/upload/v1535759871/jason-leung-798979-unsplash.jpg"
+                            alt="">
+                    </div>
+                    <div class="blog-slider__content">
+                        <span class="blog-slider__code">26 December 2019</span>
+                        <div class="blog-slider__title">Lorem Ipsum Dolor2</div>
+                        <div class="blog-slider__text">Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                            Recusandae voluptate repellendus magni illo ea animi?</div>
+                        <a href="#" class="blog-slider__button">READ MORE</a>
+                    </div>
+                </div>
+
+                <div class="blog-slider__item swiper-slide">
+                    <div class="blog-slider__img">
+                        <img src="https://res.cloudinary.com/muhammederdem/image/upload/v1535759871/alessandro-capuzzi-799180-unsplash.jpg"
+                            alt="">
+                    </div>
+                    <div class="blog-slider__content">
+                        <span class="blog-slider__code">26 December 2019</span>
+                        <div class="blog-slider__title">Lorem Ipsum Dolor</div>
+                        <div class="blog-slider__text">Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                            Recusandae voluptate repellendus magni illo ea animi?</div>
+                        <a href="#" class="blog-slider__button">READ MORE</a>
+                    </div>
+                </div>
+
+            </div>
+            <div class="blog-slider__pagination"></div>
+        </div>
+
         <!-- <div class="najpopularnije">
             <div class="naslov-tacka">
                 <img class="tacka" src="img/plavo-01.png" alt="- ">
@@ -171,7 +231,7 @@
         </div>
     </div>
 
-    <footer>
+    <footer class="footer">
         <hr>
         <div class="footer-opis">
             <h2>Ostani uvek u toku dešavanja!</h2>
@@ -217,6 +277,7 @@
 
     <script src="js/meni.js"></script>
     <script src="js/kartice.js"></script>
+    <script src="js/animacija.js"></script>
 </body>
 
 </html>

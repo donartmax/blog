@@ -1,21 +1,23 @@
-var nav = document.querySelector("nav ul"),
-    navToggle = document.querySelector("nav .skip");
-if (navToggle) {
-    navToggle.addEventListener("click",
-        function (e) {
-            if (nav.className == "open") {
-                nav.className = "";
-            } else {
-                nav.className = "open";
-            }
-            e.preventDefault();
-        }, false);
-}
+// function myFunction(x) {
+//     x.classList.toggle("change");
+//     x.addEventListener("click", function () {
+//         this.classList.toggle("active");
+//         var item = document.getElementsByClassName("meni-telefon");
 
-var specifiedElement = document.querySelector('nav');
-document.addEventListener('click', function (event) {
-    var isClickInside = specifiedElement.contains(event.target);
-    if (!isClickInside && nav.className == "open") {
-        nav.className = "";
+//         if (item.style.display === "inline-block") {
+//             item.style.display = "none";
+//         } else {
+//             item.style.display = "inline-block";
+//         }
+//     }
+// }
+
+function myFunction(x) {
+    x.classList.toggle("change");
+    var el = document.getElementsByClassName("meni-telefon");
+    if (el.style.display === "inline") {
+        el.style.display = "none";
+    } else {
+        el.style.display = "inline";
     }
-});
+}
