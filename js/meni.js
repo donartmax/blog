@@ -12,12 +12,21 @@
 //     }
 // }
 
-function myFunction(x) {
-    x.classList.toggle("change");
-    var el = document.getElementsByClassName("meni-telefon");
-    if (el.style.display === "inline") {
-        el.style.display = "none";
+// function myFunction(x) {
+//     x.classList.toggle("change");
+//     var el = document.getElementsByClassName("meni-telefon");
+//     if (el.style.display === "inline") {
+//         el.style.display = "none";
+//     } else {
+//         el.style.display = "inline";
+//     }
+// }
+
+function myFunction() {
+    var x = document.getElementById("myLinks");
+    if (x.style.display === "inline-block") {
+        x.style.display = "none";
     } else {
-        el.style.display = "inline";
+        x.style.display = "inline-block";
     }
-}
+} 
