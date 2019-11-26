@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/pocetna.css">
     <link rel="stylesheet" href="css/meni.css">
+    <link rel="stylesheet" href="css/slajder.css">
     <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <title>BLOGcommunity</title>
@@ -21,27 +22,6 @@
 
         <div class="grid-logo">
             <a href="/blog"><img id="logo" src="img/epos_logo.png" alt="LOGO"></a>
-        </div>
-
-        <div class="meni-telefon">
-            <div class="topnav">
-
-                <div id="myLinks">
-                    <ul>
-                        <li><a href="/blog">Početna</a></li>
-                        <li><a href="/blog/o_nama/">O nama</a></li>
-                        <li><a href="/blog/registracija">Registracija</a></li>
-                        <li><a href="/blog/logovanje">Uloguj se</a></li>
-                    </ul>
-                </div>
-
-
-                <a href="javascript:void(0);" cl <div class="container" onclick="myFunction(this)">
-                    <div class="bar1"></div>
-                    <div class="bar2"></div>
-                    <div class="bar3"></div>
-                </a>
-            </div>
         </div>
 
         <div class="grid-ul">
@@ -85,13 +65,13 @@
 
     <div id="postovi">
 
-        <!-- <div class="najpopularnije">
+        <div class="najpopularnije">
             <div class="naslov-tacka">
                 <img class="tacka" src="img/plavo-01.png" alt="- ">
                 <h1>Najpopularnije</h1>
             </div>
 
-            <div class="kartice">
+            <div class="kartice active">
                 <div class="kartica">
                     <p class="datum sivi">25. Novembar 2019.</p>
                     <p class="naslov-kartice">Kako napraviti responzivan sajt?</p>
@@ -103,12 +83,12 @@
                         <div class="post-podaci">
                             <p class="sivi">Autor</p>
                             <a href="">
-                                <p class="ime">Luka Brocic</p>
+                                <p class="ime">Marko Markovic</p>
                             </a>
                         </div>
                     </div>
                 </div>
-                <div class="kartica">
+                <div class="kartica hide">
                     <p class="datum sivi">25. Novembar 2019.</p>
                     <p class="naslov-kartice">Kako napraviti responzivan sajt?</p>
                     <div class="autor">
@@ -119,13 +99,64 @@
                         <div class="post-podaci">
                             <p class="sivi">Autor</p>
                             <a href="">
-                                <p class="ime">Luka Brocic</p>
+                                <p class="ime">Marko Markovic</p>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="kartica hide">
+                    <p class="datum sivi">25. Novembar 2019.</p>
+                    <p class="naslov-kartice">Kako napraviti responzivan sajt?</p>
+                    <div class="autor">
+                        <div class="slika">
+                            <img src="img/epos_logo.png" alt="">
+                        </div>
+
+                        <div class="post-podaci">
+                            <p class="sivi">Autor</p>
+                            <a href="">
+                                <p class="ime">Marko Markovic</p>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="kartica hide">
+                    <p class="datum sivi">25. Novembar 2019.</p>
+                    <p class="naslov-kartice">Kako napraviti responzivan sajt?</p>
+                    <div class="autor">
+                        <div class="slika">
+                            <img src="img/epos_logo.png" alt="">
+                        </div>
+
+                        <div class="post-podaci">
+                            <p class="sivi">Autor</p>
+                            <a href="">
+                                <p class="ime">Marko Markovic</p>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="kartica hide">
+                    <p class="datum sivi">25. Novembar 2019.</p>
+                    <p class="naslov-kartice">Kako napraviti responzivan sajt?</p>
+                    <div class="autor">
+                        <div class="slika">
+                            <img src="img/epos_logo.png" alt="">
+                        </div>
+
+                        <div class="post-podaci">
+                            <p class="sivi">Autor</p>
+                            <a href="">
+                                <p class="ime">Marko Markovic</p>
                             </a>
                         </div>
                     </div>
                 </div>
             </div>
-        </div> -->
+        </div>
 
         <div class="svi-postovi">
             <div class="naslov-tacka">
@@ -226,8 +257,12 @@
     </footer>
 
 
-    <script src="js/meni.js"></script>
-    <script src="js/kartice.js"></script>
+    <script src="node_modules/@glidejs/glide/dist/glide.min.js"></script>
+
+    <script>
+        new Glide('.glide').mount()
+    </script>
+
     <script src="js/animacija.js"></script>
 </body>
 
